@@ -92,10 +92,10 @@ def extrapolate(global_mesh,
                 direc='right-up'):
     h_off, w_off = global_mesh.graph['hoffset'], global_mesh.graph['woffset']
     noext_H, noext_W = global_mesh.graph['noext_H'], global_mesh.graph['noext_W']
-    print("h_off="+h_off)
-    print("w_off="+w_off)
-    print("noext_H="+noext_H)
-    print("noext_W="+noext_W)
+    print("h_off="+str(h_off))
+    print("w_off="+str(w_off))
+    print("noext_H="+str(noext_H))
+    print("noext_W="+str(noext_W))
 
     if "up" in direc.lower() and "-" not in direc.lower():
         all_anchor = [0, h_off + config['context_thickness'], w_off, w_off + noext_W]
