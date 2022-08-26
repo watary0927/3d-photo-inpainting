@@ -1975,11 +1975,7 @@ def write_ply(image,
                                                                                     specific_edge_id,
                                                                                     specific_edge_loc,
                                                                                     inpaint_iter=1)
-    
-    cv2.imshow("specific_edge_nodes",input_mesh)  
-    cv2.imshow("specific_edge_nodes",info_on_pix)  
-    cv2.imshow("specific_edge_nodes",specific_edge_nodes) 
-    cv2.imshow("new_edge_ccs",new_edge_ccs)                                                                              
+                                                                              
     cv2.imshow("image",image)
 
     vertex_id = 0
