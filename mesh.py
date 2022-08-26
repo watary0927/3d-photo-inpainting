@@ -1976,8 +1976,6 @@ def write_ply(image,
                                                                                     specific_edge_loc,
                                                                                     inpaint_iter=1)
                                                                               
-    cv2.imshow("image",image)
-
     vertex_id = 0
     input_mesh.graph['H'], input_mesh.graph['W'] = input_mesh.graph['noext_H'], input_mesh.graph['noext_W']
     background_canvas = np.zeros((input_mesh.graph['H'],
