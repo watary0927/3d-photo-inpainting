@@ -2036,7 +2036,7 @@ def write_ply(image,
     if config['save_ply'] is True:
         print("Writing mesh file %s ..." % ply_name)
         with open(ply_name, 'w') as ply_fi:
-            ply_fi.write('ply\n' + 'format ascii 1.0\n')
+            ply_fi.write('ply\n' + 'format binary_little_endian 1.0\n')
             ply_fi.write('comment H ' + str(int(input_mesh.graph['H'])) + '\n')
             ply_fi.write('comment W ' + str(int(input_mesh.graph['W'])) + '\n')
             ply_fi.write('comment hFov ' + str(float(input_mesh.graph['hFov'])) + '\n')
